@@ -14,6 +14,11 @@
 		04A3F2462ED62EAA009B95D8 /* HikingSurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F2452ED62EAA009B95D8 /* HikingSurveyTests.swift */; };
 		04A3F2502ED62EAA009B95D8 /* HikingSurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F24F2ED62EAA009B95D8 /* HikingSurveyUITests.swift */; };
 		04A3F2522ED62EAA009B95D8 /* HikingSurveyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F2512ED62EAA009B95D8 /* HikingSurveyUITestsLaunchTests.swift */; };
+		04A3F2622ED62F27009B95D8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F2612ED62F27009B95D8 /* Response.swift */; };
+		04A3F2652ED63267009B95D8 /* ResponseComponent .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F2642ED63267009B95D8 /* ResponseComponent .swift */; };
+		04A3F2672ED6340D009B95D8 /* ScorerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F2662ED6340D009B95D8 /* ScorerViewModel.swift */; };
+		04A3F26B2ED638B3009B95D8 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F26A2ED638B3009B95D8 /* Sentiment.swift */; };
+		04A3F26E2ED640E3009B95D8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3F26D2ED640E3009B95D8 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		04A3F24B2ED62EAA009B95D8 /* HikingSurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikingSurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A3F24F2ED62EAA009B95D8 /* HikingSurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingSurveyUITests.swift; sourceTree = "<group>"; };
 		04A3F2512ED62EAA009B95D8 /* HikingSurveyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingSurveyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04A3F2612ED62F27009B95D8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		04A3F2642ED63267009B95D8 /* ResponseComponent .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseComponent .swift"; sourceTree = "<group>"; };
+		04A3F2662ED6340D009B95D8 /* ScorerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorerViewModel.swift; sourceTree = "<group>"; };
+		04A3F26A2ED638B3009B95D8 /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
+		04A3F26D2ED640E3009B95D8 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,12 @@
 		04A3F2332ED62EA8009B95D8 /* HikingSurvey */ = {
 			isa = PBXGroup;
 			children = (
+				04A3F2692ED63870009B95D8 /* Enums */,
+				04A3F25F2ED62EBB009B95D8 /* Models */,
+				04A3F2682ED6341A009B95D8 /* Resources */,
+				04A3F2602ED62EC1009B95D8 /* ViewModels */,
+				04A3F25E2ED62EB8009B95D8 /* Views */,
 				04A3F2342ED62EA8009B95D8 /* HikingSurveyApp.swift */,
-				04A3F2362ED62EA8009B95D8 /* ContentView.swift */,
-				04A3F2382ED62EA9009B95D8 /* Assets.xcassets */,
 				04A3F23A2ED62EA9009B95D8 /* Preview Content */,
 			);
 			path = HikingSurvey;
@@ -125,6 +138,72 @@
 				04A3F2512ED62EAA009B95D8 /* HikingSurveyUITestsLaunchTests.swift */,
 			);
 			path = HikingSurveyUITests;
+			sourceTree = "<group>";
+		};
+		04A3F25E2ED62EB8009B95D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F2632ED63256009B95D8 /* Components */,
+				04A3F2702ED6C00F009B95D8 /* ChartView */,
+				04A3F26F2ED640E7009B95D8 /* ContentView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04A3F25F2ED62EBB009B95D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F2612ED62F27009B95D8 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04A3F2602ED62EC1009B95D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F2662ED6340D009B95D8 /* ScorerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		04A3F2632ED63256009B95D8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F2642ED63267009B95D8 /* ResponseComponent .swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		04A3F2682ED6341A009B95D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F2382ED62EA9009B95D8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04A3F2692ED63870009B95D8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F26A2ED638B3009B95D8 /* Sentiment.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		04A3F26F2ED640E7009B95D8 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F2362ED62EA8009B95D8 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		04A3F2702ED6C00F009B95D8 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				04A3F26D2ED640E3009B95D8 /* ChartView.swift */,
+			);
+			path = ChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A3F2372ED62EA8009B95D8 /* ContentView.swift in Sources */,
+				04A3F2652ED63267009B95D8 /* ResponseComponent .swift in Sources */,
+				04A3F2672ED6340D009B95D8 /* ScorerViewModel.swift in Sources */,
+				04A3F26E2ED640E3009B95D8 /* ChartView.swift in Sources */,
+				04A3F2622ED62F27009B95D8 /* Response.swift in Sources */,
 				04A3F2352ED62EA8009B95D8 /* HikingSurveyApp.swift in Sources */,
+				04A3F26B2ED638B3009B95D8 /* Sentiment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
